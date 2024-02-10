@@ -8,8 +8,9 @@ function Home() {
             <Navbar />
             <main className='mx-auto max-w-screen-xl mt-8'>
                 <div>
-                    This is home page
+                    <h1 className='text-3xl mx-4'>Dashboard</h1>
                 </div>
+
             </main>
         </>
     )
