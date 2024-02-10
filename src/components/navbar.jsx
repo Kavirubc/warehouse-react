@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css';
+import '../';
 
 function Navbar() {
     return (
@@ -41,7 +41,7 @@ function Navbar() {
                         <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                             <li>
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="text-gray-900 dark:text-white hover:underline"
                                     aria-current="page"
                                 >
@@ -50,7 +50,7 @@ function Navbar() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/brands"
                                     className="text-gray-900 dark:text-white hover:underline"
                                 >
                                     Brands
