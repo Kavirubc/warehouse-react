@@ -58,7 +58,7 @@ function Navbar() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/stocks"
                                     className="text-gray-900 dark:text-white hover:underline"
                                 >
                                     Stocks
@@ -66,7 +66,7 @@ function Navbar() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/orders"
                                     className="text-gray-900 dark:text-white hover:underline"
                                 >
                                     Orders
@@ -74,7 +74,7 @@ function Navbar() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/reports"
                                     className="text-gray-900 dark:text-white hover:underline"
                                 >
                                     Reports
@@ -82,7 +82,7 @@ function Navbar() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/products"
                                     className="text-gray-900 dark:text-white hover:underline"
                                 >
                                     Products
@@ -90,7 +90,7 @@ function Navbar() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/teams"
                                     className="text-gray-900 dark:text-white hover:underline"
                                 >
                                     Teams
