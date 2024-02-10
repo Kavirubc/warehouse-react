@@ -84,6 +84,45 @@ function Home() {
                                 <td className="px-6 py-4 whitespace-nowrap">Data 5</td>
                                 <td className="px-6 py-4 whitespace-nowrap">Data 6</td>
                             </tr>
+                            <tr>
+                                <td className="px-6 py-4 whitespace-nowrap">
+                                    <input
+                                        type="checkbox"
+                                        checked={isChecked}
+                                        onChange={handleCheckboxChange}
+                                        className="form-checkbox h-5 w-5 text-indigo-600"
+                                    />
+                                </td>
+                                <td className="px-6 py-4 whitespace-nowrap">Data 4</td>
+                                <td className="px-6 py-4 whitespace-nowrap">Data 5</td>
+                                <td className="px-6 py-4 whitespace-nowrap">Data 6</td>
+                            </tr>
+                            <tr>
+                                <td className="px-6 py-4 whitespace-nowrap">
+                                    <input
+                                        type="checkbox"
+                                        checked={isChecked}
+                                        onChange={handleCheckboxChange}
+                                        className="form-checkbox h-5 w-5 text-indigo-600"
+                                    />
+                                </td>
+                                <td className="px-6 py-4 whitespace-nowrap">Data 4</td>
+                                <td className="px-6 py-4 whitespace-nowrap">Data 5</td>
+                                <td className="px-6 py-4 whitespace-nowrap">Data 6</td>
+                            </tr>
+                            <tr>
+                                <td className="px-6 py-4 whitespace-nowrap">
+                                    <input
+                                        type="checkbox"
+                                        checked={isChecked}
+                                        onChange={handleCheckboxChange}
+                                        className="form-checkbox h-5 w-5 text-indigo-600"
+                                    />
+                                </td>
+                                <td className="px-6 py-4 whitespace-nowrap">Data 4</td>
+                                <td className="px-6 py-4 whitespace-nowrap">Data 5</td>
+                                <td className="px-6 py-4 whitespace-nowrap">Data 6</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
