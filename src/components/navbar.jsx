@@ -16,15 +16,15 @@ function Navbar() {
                             alt="Flowbite Logo"
                         />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                            Flowbite
+                            Warehouse
                         </span>
                     </a>
                     <div className="flex items-center space-x-6 rtl:space-x-reverse">
                         <a
-                            href="tel:5541251234"
+                            href="tel:0711231234"
                             className="text-sm  text-gray-500 dark:text-white hover:underline"
                         >
-                            (555) 412-1234
+                            (071) 123-1234
                         </a>
                         <a
                             href="#"
@@ -45,7 +45,7 @@ function Navbar() {
                                     className="text-gray-900 dark:text-white hover:underline"
                                     aria-current="page"
                                 >
-                                    Home
+                                    Dashboard
                                 </a>
                             </li>
                             <li>
@@ -53,7 +53,7 @@ function Navbar() {
                                     href="#"
                                     className="text-gray-900 dark:text-white hover:underline"
                                 >
-                                    Company
+                                    Brands
                                 </a>
                             </li>
                             <li>
@@ -61,7 +61,7 @@ function Navbar() {
                                     href="#"
                                     className="text-gray-900 dark:text-white hover:underline"
                                 >
-                                    Team
+                                    Stocks
                                 </a>
                             </li>
                             <li>
@@ -69,7 +69,31 @@ function Navbar() {
                                     href="#"
                                     className="text-gray-900 dark:text-white hover:underline"
                                 >
-                                    Features
+                                    Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    className="text-gray-900 dark:text-white hover:underline"
+                                >
+                                    Reports
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    className="text-gray-900 dark:text-white hover:underline"
+                                >
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    className="text-gray-900 dark:text-white hover:underline"
+                                >
+                                    Teams
                                 </a>
                             </li>
                         </ul>
