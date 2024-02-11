@@ -8,6 +8,7 @@ import Products from './pages/products';
 import Teams from './pages/teams';
 import Orders from './pages/orders';
 import Login from './pages/login';
+import Signup from './pages/signup';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/sgnup" element={<Signup />} />
       </Routes>
     </Router>
   );
