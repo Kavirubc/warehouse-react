@@ -29,7 +29,7 @@ function Login() {
                 console.log(formData);
                 setIsSubmitting(false);
                 // Redirect to homepage
-                window.location.href = '/'; // Navigate to the home page
+                window.location.href = '/home'; // Navigate to the home page
             }, 1000);
         }
     };

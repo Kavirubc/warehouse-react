@@ -8,7 +8,7 @@ function Navbar() {
             <nav className="bg-white border-gray-200 dark:bg-gray-900">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
                     <a
-                        href="https://flowbite.com"
+                        href="/home"
                         className="flex items-center space-x-3 rtl:space-x-reverse"
                     >
                         <img
@@ -42,7 +42,7 @@ function Navbar() {
                         <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                             <li>
                                 <a
-                                    href="/"
+                                    href="/home"
                                     className="text-gray-900 dark:text-white hover:underline"
                                     aria-current="page"
                                 >
