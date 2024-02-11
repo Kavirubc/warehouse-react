@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Admin() {
     return (
-        <Router>
+        <div>
+            <h1 className="text-3xl font-semibold text-center my-8">Admin Dashboard</h1>
             <nav className="bg-gray-800 text-white py-4">
                 <div className="max-w-screen-xl mx-auto px-4 flex justify-center items-center space-x-4">
                     <Link to="#products" className="hover:underline">Products</Link>
@@ -76,7 +77,7 @@ function Admin() {
                     <button type="submit">Place Order</button>
                 </form>
             </div>
-        </Router>
+        </div>
     );
 }
 
