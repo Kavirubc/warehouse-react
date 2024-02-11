@@ -97,6 +97,14 @@ function Navbar() {
                                     Teams
                                 </a>
                             </li>
+                            <li>
+                                <a
+                                    href="/admin"
+                                    className="text-gray-900 dark:text-white hover:underline"
+                                >
+                                    Admin
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

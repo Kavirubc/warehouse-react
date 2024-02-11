@@ -9,6 +9,7 @@ import Teams from './pages/teams';
 import Orders from './pages/orders';
 import Login from './pages/login';
 import Signup from './pages/signup';
+import Admin from './pages/admin';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/teams" element={<Teams />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </Router>
   );
