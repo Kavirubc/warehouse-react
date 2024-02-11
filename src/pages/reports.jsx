@@ -1,28 +1,37 @@
 import React from 'react';
 import Navbar from '../components/navbar';
-import { Bar } from 'react-chartjs-2';
 
 function Reports() {
     // Sample data for demonstration
-    const productsCount = 6;
-    const ordersCount = 1500;
-    const totalRevenue = 50000;
+    const productSummary = [
+        { name: 'Total Products', count: 100 },
+        { name: 'Active Products', count: 80 },
+        { name: 'Inactive Products', count: 20 },
+    ];
 
-    // Sample data for the bar chart
-    const chartData = {
-        labels: ['Suppliers', 'Sellers', 'Retail Customers', 'Warehouse Admins'],
-        datasets: [
-            {
-                label: 'Total Count',
-                backgroundColor: ['#4CAF50', '#FFC107', '#2196F3', '#FF5722'],
-                borderColor: 'rgba(255, 99, 132, 0.2)',
-                borderWidth: 1,
-                hoverBackgroundColor: 'rgba(255, 99, 132, 0.4)',
-                hoverBorderColor: 'rgba(255, 99, 132, 1)',
-                data: [2, 2, 2, 2], // Sample counts
-            },
-        ],
-    };
+    const brandSummary = [
+        { name: 'Total Brands', count: 5 },
+        { name: 'Popular Brands', count: 3 },
+        { name: 'Unpopular Brands', count: 2 },
+    ];
+
+    const teamSummary = [
+        { name: 'Total Teams', count: 3 },
+        { name: 'Warehouse Admins', count: 1 },
+        { name: 'Retail Customers', count: 2 },
+    ];
+
+    const stockSummary = [
+        { name: 'Total Stock', count: 500 },
+        { name: 'Available Stock', count: 350 },
+        { name: 'Out of Stock', count: 150 },
+    ];
+
+    const orderSummary = [
+        { name: 'Total Orders', count: 200 },
+        { name: 'Pending Orders', count: 50 },
+        { name: 'Completed Orders', count: 150 },
+    ];
 
     return (
         <>
@@ -32,34 +41,35 @@ function Reports() {
                     <h1 className="text-4xl font-semibold text-gray-800 mb-8">Reports</h1>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div className="bg-white shadow-md rounded-lg p-4">
+                    <div className="bg-white shadow-md rounded-lg p-4 hover:bg-gray-100 transition duration-300">
                         <h2 className="text-xl font-semibold mb-4">Product Summary</h2>
-                        <p className="text-gray-600 mb-2">Total Products: {productsCount}</p>
+                        {productSummary.map((item, index) => (
+                            <p key={index} className="text-gray-600 mb-2">{item.name}: {item.count}</p>
+                        ))}
                     </div>
-                    <div className="bg-white shadow-md rounded-lg p-4">
+                    <div className="bg-white shadow-md rounded-lg p-4 hover:bg-gray-100 transition duration-300">
+                        <h2 className="text-xl font-semibold mb-4">Brand Summary</h2>
+                        {brandSummary.map((item, index) => (
+                            <p key={index} className="text-gray-600 mb-2">{item.name}: {item.count}</p>
+                        ))}
+                    </div>
+                    <div className="bg-white shadow-md rounded-lg p-4 hover:bg-gray-100 transition duration-300">
+                        <h2 className="text-xl font-semibold mb-4">Team Summary</h2>
+                        {teamSummary.map((item, index) => (
+                            <p key={index} className="text-gray-600 mb-2">{item.name}: {item.count}</p>
+                        ))}
+                    </div>
+                    <div className="bg-white shadow-md rounded-lg p-4 hover:bg-gray-100 transition duration-300">
+                        <h2 className="text-xl font-semibold mb-4">Stock Summary</h2>
+                        {stockSummary.map((item, index) => (
+                            <p key={index} className="text-gray-600 mb-2">{item.name}: {item.count}</p>
+                        ))}
+                    </div>
+                    <div className="bg-white shadow-md rounded-lg p-4 hover:bg-gray-100 transition duration-300">
                         <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
-                        <p className="text-gray-600 mb-2">Total Orders: {ordersCount}</p>
-                        <p className="text-gray-600 mb-2">Total Revenue: ${totalRevenue}</p>
-                    </div>
-                    <div className="bg-white shadow-md rounded-lg p-4">
-                        <h2 className="text-xl font-semibold mb-4">Teams Summary</h2>
-                        <div className="mt-4">
-                            <Bar
-                                data={chartData}
-                                width={100}
-                                height={200}
-                                options={{
-                                    maintainAspectRatio: false,
-                                    scales: {
-                                        yAxes: [{
-                                            ticks: {
-                                                beginAtZero: true,
-                                            },
-                                        }],
-                                    },
-                                }}
-                            />
-                        </div>
+                        {orderSummary.map((item, index) => (
+                            <p key={index} className="text-gray-600 mb-2">{item.name}: {item.count}</p>
+                        ))}
                     </div>
                 </div>
             </main>
