@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Assuming you're using React Router
-import Navbar from '../components/navbar';
+
 
 function Login() {
     const [formData, setFormData] = useState({
@@ -46,7 +46,7 @@ function Login() {
 
     return (
         <>
-            <Navbar />
+            
             <div className="flex justify-center items-center h-screen bg-gray-100">
                 <div className="bg-white p-8 rounded shadow-md w-96">
                     <h2 className="text-2xl font-semibold mb-4">Login</h2>
