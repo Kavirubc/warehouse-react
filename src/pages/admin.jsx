@@ -12,6 +12,8 @@ function Admin() {
                     <Link to="#teams" className="hover:underline">Teams</Link>
                     <Link to="#stocks" className="hover:underline">Stocks</Link>
                     <Link to="#orders" className="hover:underline">Orders</Link>
+                    <Link to="/home" className="hover:underline">Back to Dashboard</Link>
+
                 </div>
             </nav>
 
